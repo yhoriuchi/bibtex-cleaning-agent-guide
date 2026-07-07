@@ -13,14 +13,16 @@ title: BibTeX Cleaning Agent Guide
 A source-backed protocol for agentic AI systems that clean BibTeX entries for LaTeX manuscripts without damaging citation style, publication metadata, or rendered references.
 
 <div class="hero-actions" markdown="1">
-[Use the Report Template](cleanup-report-template.html){: .button .button-primary}
+<button type="button" class="button button-primary" id="copy-agent-instructions">Copy Agent Instructions</button>
+[Use the Report Template](cleanup-report-template.html){: .button}
+<span class="copy-status" id="copy-agent-instructions-status" aria-live="polite"></span>
 </div>
 
 </section>
 
 ## How to Use This Guide
 
-1. Copy the repository's `AGENTS.md` instructions or `prompts/bibtex-cleanup-agent.md` prompt into the agent that will clean the bibliography.
+1. Click **Copy Agent Instructions** and paste the instructions into the agent that will clean the bibliography.
 2. Give the agent the manuscript root, active `.tex`, `.aux`, `.bib`, `.bst`, and appendix files, plus the target journal or house style.
 3. Tell the agent the access date to use for web sources.
 4. Require a cleaned `.bib` file and a detailed Markdown cleanup report.
@@ -174,5 +176,58 @@ The final cleanup report should include:
 - remaining warnings or risks.
 
 Use the [cleanup report template](cleanup-report-template.html) to keep this consistent across projects.
+
+<script id="agent-instructions-text" type="text/plain">{% include_relative AGENTS.md %}</script>
+<script>
+(function () {
+  var button = document.getElementById("copy-agent-instructions");
+  var source = document.getElementById("agent-instructions-text");
+  var status = document.getElementById("copy-agent-instructions-status");
+
+  if (!button || !source) {
+    return;
+  }
+
+  function setStatus(message) {
+    if (!status) {
+      return;
+    }
+    status.textContent = message;
+    window.clearTimeout(setStatus.timeout);
+    setStatus.timeout = window.setTimeout(function () {
+      status.textContent = "";
+    }, 2400);
+  }
+
+  function fallbackCopy(text) {
+    var textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.setAttribute("readonly", "");
+    textarea.style.position = "fixed";
+    textarea.style.top = "-9999px";
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+  }
+
+  button.addEventListener("click", function () {
+    var text = source.textContent.trim();
+
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () {
+        setStatus("Copied");
+      }).catch(function () {
+        fallbackCopy(text);
+        setStatus("Copied");
+      });
+      return;
+    }
+
+    fallbackCopy(text);
+    setStatus("Copied");
+  });
+})();
+</script>
 
 </main>

@@ -74,14 +74,29 @@ a {
   background: var(--paper);
   color: var(--ink);
   text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
   font-size: 0.95rem;
   font-weight: 700;
+}
+
+button.button {
+  appearance: none;
 }
 
 .button-primary {
   border-color: var(--teal);
   background: var(--teal);
   color: #ffffff;
+}
+
+.copy-status {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--teal-dark);
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 .summary-grid {
