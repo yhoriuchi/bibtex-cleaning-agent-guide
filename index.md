@@ -13,12 +13,18 @@ title: BibTeX Cleaning Agent Guide
 A source-backed protocol for agentic AI systems that clean BibTeX entries for LaTeX manuscripts without damaging citation style, publication metadata, or rendered references.
 
 <div class="hero-actions" markdown="1">
-[Read the Agent Protocol](agent-protocol.html){: .button .button-primary}
-[Copy the Prompt](copy-paste-prompt.html){: .button}
-[Use the Report Template](cleanup-report-template.html){: .button}
+[Use the Report Template](cleanup-report-template.html){: .button .button-primary}
 </div>
 
 </section>
+
+## How to Use This Guide
+
+1. Copy the repository's `AGENTS.md` instructions or `prompts/bibtex-cleanup-agent.md` prompt into the agent that will clean the bibliography.
+2. Give the agent the manuscript root, active `.tex`, `.aux`, `.bib`, `.bst`, and appendix files, plus the target journal or house style.
+3. Tell the agent the access date to use for web sources.
+4. Require a cleaned `.bib` file and a detailed Markdown cleanup report.
+5. Use the [cleanup report template](cleanup-report-template.html) to keep the audit trail consistent.
 
 <section class="summary-grid" markdown="1">
 

@@ -8,3 +8,6 @@ exclude:
   - .github/
   - _site/
   - .DS_Store
+  - AGENTS.md
+  - README.md
+  - prompts/
