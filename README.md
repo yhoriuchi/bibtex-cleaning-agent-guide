@@ -4,6 +4,10 @@ This repository contains a detailed protocol for agentic AI systems that clean B
 
 The main instructions are in [AGENTS.md](AGENTS.md). A publishable GitHub Pages version is in [index.md](index.md).
 
+Public guide page: <https://yhoriuchi.github.io/bibtex-cleaning-agent-guide/>
+
+Related template: If you are starting a new manuscript, consider using my [LaTeX Research Article Template](https://github.com/yhoriuchi/latex-research-article-template). It gives agents a more regular manuscript structure, bibliography setup, and compilation workflow to inspect.
+
 ## What This Repo Provides
 
 - A step-by-step agent protocol for cleaning `.bib` files without changing citation style by accident.
