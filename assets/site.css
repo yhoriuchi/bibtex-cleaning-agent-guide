@@ -219,6 +219,35 @@ pre code {
   padding: 0;
 }
 
+.highlighter-rouge,
+.highlight {
+  border-radius: 8px;
+  background: var(--code-bg);
+}
+
+.highlight {
+  overflow-x: auto;
+}
+
+.highlight pre,
+pre.highlight {
+  margin: 0;
+  background: var(--code-bg) !important;
+}
+
+.highlight code,
+pre.highlight code {
+  background: transparent;
+  color: var(--code-ink);
+}
+
+.highlight .err,
+.highlight .o,
+.highlight .p {
+  color: var(--code-ink) !important;
+  background: transparent !important;
+}
+
 blockquote {
   margin: 20px 0;
   border-left: 4px solid var(--rust);
