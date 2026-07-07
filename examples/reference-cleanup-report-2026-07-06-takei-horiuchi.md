@@ -123,7 +123,7 @@
 
 - `Takei2023c`
   - Removed the extra period in the title.
-  - Changed `type = {{PhD} dissertation.}` to `type = {{PhD} dissertation}`.
+  - Removed the terminal period from the dissertation type field while preserving protected `PhD` capitalization.
 
 - `Bassan-Nygate2025`
   - Protected acronyms in the title: `{IR}` and `{U.S.}`.
