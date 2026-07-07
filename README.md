@@ -2,9 +2,7 @@
 
 This repository contains a detailed protocol for agentic AI systems that clean BibTeX databases for LaTeX manuscripts. It is designed for research workflows where bibliography quality matters: journal manuscripts, appendices, online-first articles, working papers, web citations, and style-specific rendering.
 
-The main instructions are in [AGENTS.md](AGENTS.md). A publishable GitHub Pages version is in [index.md](index.md).
-
-Public guide page: <https://yhoriuchi.github.io/bibtex-cleaning-agent-guide/>
+The main instructions are in [AGENTS.md](AGENTS.md). The public GitHub Pages guide is at <https://yhoriuchi.github.io/bibtex-cleaning-agent-guide/>, with page source in [index.md](index.md).
 
 Related template: If you are starting a new manuscript, consider using my [LaTeX Research Article Template](https://github.com/yhoriuchi/latex-research-article-template). It gives agents a more regular manuscript structure, bibliography setup, and compilation workflow to inspect.
 
@@ -29,25 +27,6 @@ Require the agent to return both a cleaned `.bib` file and a detailed Markdown c
 
 ## GitHub Pages
 
-This repo includes `.github/workflows/pages.yml`, which builds the site from `index.md` and publishes it through GitHub Pages.
-
-After pushing this repository to GitHub:
-
-1. Open the repository settings.
-2. Go to **Pages**.
-3. Set the source to **GitHub Actions**.
-4. Push to `main` or run the workflow manually.
-
-The page will publish at:
-
-```text
-https://USERNAME.github.io/REPOSITORY/
-```
-
-## Suggested Repository Name
-
-```text
-bibtex-cleaning-agent-guide
-```
+The live guide is published at <https://yhoriuchi.github.io/bibtex-cleaning-agent-guide/>. This repo includes `.github/workflows/pages.yml`, which builds the site from [index.md](index.md) and publishes it through GitHub Pages.
 
 The guide is intentionally example-free so users can apply the protocol without exposing manuscript-specific cleanup logs.
