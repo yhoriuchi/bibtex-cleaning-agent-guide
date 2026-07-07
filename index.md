@@ -10,11 +10,17 @@ title: BibTeX Cleaning Agent Guide
 
 # BibTeX Cleaning Agent Guide
 
+- **Author:** Yusaku Horiuchi
+- **Affiliation:** Syde P. Deeb Eminent Scholar in Political Science, Florida State University
+- **Created:** July 7, 2026
+- **Last revised:** July 7, 2026
+
+![Page views](https://hits.sh/yhoriuchi.github.io/bibtex-cleaning-agent-guide.svg?label=page%20views)
+
 A source-backed protocol for agentic AI systems that clean BibTeX entries for LaTeX manuscripts without damaging citation style, publication metadata, or rendered references.
 
 <div class="hero-actions" markdown="1">
 <button type="button" class="button button-primary" id="copy-agent-instructions">Copy Agent Instructions</button>
-[Use the Report Template](cleanup-report-template.html){: .button}
 <span class="copy-status" id="copy-agent-instructions-status" aria-live="polite"></span>
 </div>
 
@@ -26,7 +32,6 @@ A source-backed protocol for agentic AI systems that clean BibTeX entries for La
 2. Give the agent the manuscript root, active `.tex`, `.aux`, `.bib`, `.bst`, and appendix files, plus the target journal or house style.
 3. Tell the agent the access date to use for web sources.
 4. Require a cleaned `.bib` file and a detailed Markdown cleanup report.
-5. Use the [cleanup report template](cleanup-report-template.html) to keep the audit trail consistent.
 
 <section class="summary-grid" markdown="1">
 
@@ -174,8 +179,6 @@ The final cleanup report should include:
 - entries checked but left unchanged;
 - verification commands and results;
 - remaining warnings or risks.
-
-Use the [cleanup report template](cleanup-report-template.html) to keep this consistent across projects.
 
 <script id="agent-instructions-text" type="text/plain">{% include_relative AGENTS.md %}</script>
 <script>
