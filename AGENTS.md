@@ -49,7 +49,7 @@ Do not use citation aggregators, Zotero imports, Google Scholar, or copied BibTe
 
 Use `@article` for published journal articles. Prefer complete fields:
 
-```bibtex
+```text
 @article{key,
   author  = {...},
   title   = {...},
@@ -66,7 +66,7 @@ Use `pages = {1--22}` with a double hyphen. Store DOI values without `https://do
 
 For online-first articles that are published online but do not yet have assigned volume, issue, or page numbers, default to a journal-name comma plus `volume = {forthcoming}` pattern. The comma inside the `journal` field is intentional for local `.bst` styles that would otherwise print an awkward space or punctuation mark before the status label. Do not remove it as a typo.
 
-```bibtex
+```text
 @article{Horiuchi2026Civilian,
   author  = {Horiuchi, Yusaku and Tago, Atsushi},
   title   = {Civilian Control and Casualty Sensitivity in a Pacifist Democracy: Evidence from Japan's 2021 Evacuation Mission},
@@ -84,7 +84,7 @@ Use `@misc` unless the local style has a better working-paper entry type. Includ
 
 Recommended pattern:
 
-```bibtex
+```text
 @misc{key,
   author       = {...},
   title        = {...},
@@ -100,7 +100,7 @@ Use `@misc` with source, date if known, URL, and access date in `howpublished` f
 
 Recommended pattern:
 
-```bibtex
+```text
 @misc{key,
   author       = {...},
   title        = {...},
@@ -117,7 +117,7 @@ Remove source names from titles when they were imported by Zotero or a browser e
 
 Use `@book` for authored or edited books. Include publisher location by default unless the manuscript's style guide explicitly omits publisher locations.
 
-```bibtex
+```text
 @book{key,
   author    = {...},
   title     = {...},

@@ -30,7 +30,7 @@ Also scan the full `.bib` database for duplicate keys, malformed entries, and co
 6. Use `@article` for published journal articles.
 7. For articles published online before final volume, issue, or page numbers are assigned, use `@article` with an intentional comma after the journal name and put the online-first status in `volume`. Default to `volume = {forthcoming}` unless the user chooses `FirstView` or another equivalent publisher label.
 
-```bibtex
+```text
 @article{Horiuchi2026Civilian,
   author  = {Horiuchi, Yusaku and Tago, Atsushi},
   title   = {Civilian Control and Casualty Sensitivity in a Pacifist Democracy: Evidence from Japan's 2021 Evacuation Mission},
@@ -44,7 +44,7 @@ Also scan the full `.bib` database for duplicate keys, malformed entries, and co
 9. Use `@misc` for unpublished manuscripts, working papers, preprints, newspaper articles, policy sources, government pages, and web sources unless the local style requires another type. Add a public URL in `howpublished` whenever one exists.
 10. For web and working-paper entries, prefer:
 
-```bibtex
+```text
 howpublished = {\textit{Source}, Month Day, available at \url{https://...}, last accessed Month Day, Year}
 ```
 

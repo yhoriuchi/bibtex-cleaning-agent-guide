@@ -81,7 +81,7 @@ If you are starting a new manuscript, consider using my [LaTeX Research Article 
 
 Use `@misc` for unpublished manuscripts, working papers, preprints, newspaper articles, policy sources, government pages, and ordinary web records. Add a public URL in `howpublished` whenever one exists, especially when the bibliography style renders separate `url` fields poorly.
 
-```bibtex
+```text
 @misc{key,
   author       = {...},
   title        = {...},
@@ -92,7 +92,7 @@ Use `@misc` for unpublished manuscripts, working papers, preprints, newspaper ar
 
 For working papers and preprints with DOIs, keep the DOI while formatting the source and URL in `howpublished`.
 
-```bibtex
+```text
 @misc{key,
   author       = {...},
   title        = {...},
@@ -106,7 +106,7 @@ For working papers and preprints with DOIs, keep the DOI while formatting the so
 
 For articles that are published online before final volume, issue, or page numbers are assigned, default to a journal-name comma plus `volume = {forthcoming}`. The comma after the journal name is intentional for local `.bst` rendering and should not be removed as a typo.
 
-```bibtex
+```text
 @article{Horiuchi2026Civilian,
   author  = {Horiuchi, Yusaku and Tago, Atsushi},
   title   = {Civilian Control and Casualty Sensitivity in a Pacifist Democracy: Evidence from Japan's 2021 Evacuation Mission},
