@@ -1,11 +1,11 @@
-# 2026-07-06 Reference Cleanup by Codex
+# Reference Cleanup Report 2
 
 ## Metadata
 
 - Date: 2026-07-06
 - Time zone: Asia/Tokyo
-- Model: OpenAI Codex GPT-5
-- Reasoning level: High
+- Model: OpenAI Codex GPT-5.5
+- Reasoning level: Extra High
 - Project: Takei-Horiuchi
 - Manuscript: *When Is Belligerence Costly? A Meta-Analysis of Audience-Cost Experiments*
 - Workspace: `/Users/yh25m/Dropbox/Apps/Overleaf/Takei-Horiuchi`
@@ -17,7 +17,7 @@
 
 ## Style Basis
 
-- International Organization's Cambridge author instructions say that the reference list should include the complete facts of publication or availability for each source cited, and that IO-style citations are not required at submission as long as citations follow a generally accepted standard. Source: <https://www.cambridge.org/core/journals/international-organization/information/author-instructions/preparing-your-materials>
+- International Organization's Cambridge author instructions say that the reference list should include the complete facts of publication or availability for each source cited, and that IO-style citations are not required as long as citations follow a generally accepted standard. Source: <https://www.cambridge.org/core/journals/international-organization/information/author-instructions/preparing-your-materials>
 - Chicago author-date guidance says journal articles should normally include volume, issue, page range, and a DOI-based URL where available. Source: <https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html>
 - For article records with verified online publication but no assigned volume/issue/page range, I used a consistent status label such as `FirstView` or `forthcoming` rather than a placeholder page range.
 - Crossref metadata was consulted for several recently published or online-first records. DOI additions are source-data improvements, but this project's current `.bst` does not print article DOI fields in the PDF.

@@ -1,5 +1,5 @@
 ---
-title: July 6, 2026 Case Study
+title: Reference Cleanup Report 2
 ---
 
 <link rel="stylesheet" href="assets/site.css">

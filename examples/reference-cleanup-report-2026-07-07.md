@@ -1,6 +1,19 @@
-# Reference Cleanup Report for Journal of Politics Submission
+# Reference Cleanup Report 1
 
-Date checked: July 7, 2026
+## Metadata
+
+- Date: 2026-07-07
+- Time zone: America/Chicago
+- Model: OpenAI Codex GPT-5.5
+- Reasoning level: Extra High
+- Project: Inouye-Horiuchi-Jo-Matush-2
+- Manuscript: *War against Iran*
+- Workspace: `/Users/yh25m/Dropbox/Apps/Overleaf/Inouye-Horiuchi-Jo-Matush-2 (War against Iran)`
+- File changed: `bibfiles/IHJM_cleaned.bib`
+- Documentation file: `project_history/2026-07-07-reference-cleanup.md`
+- Scope: BibTeX records currently cited in `main.aux` and `appendix.aux`
+- Bibliography style left unchanged: not reported
+- Verification: `latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex` completed successfully after the edits.
 
 ## Scope
 

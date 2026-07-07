@@ -1,6 +1,6 @@
 # BibTeX Cleaning Agent Guide
 
-This repository contains a detailed protocol for agentic AI systems that clean BibTeX databases for LaTeX manuscripts. It is designed for research workflows where bibliography quality matters: journal submissions, appendices, online-first articles, working papers, web citations, and style-specific rendering.
+This repository contains a detailed protocol for agentic AI systems that clean BibTeX databases for LaTeX manuscripts. It is designed for research workflows where bibliography quality matters: journal manuscripts, appendices, online-first articles, working papers, web citations, and style-specific rendering.
 
 The main instructions are in [AGENTS.md](AGENTS.md). A publishable GitHub Pages version is in [index.md](index.md).
 

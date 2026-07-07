@@ -188,9 +188,9 @@ The included case-study reports illustrate common repairs:
 
 <div class="summary-card" markdown="1">
 
-### Journal of Politics Submission
+### Reference Cleanup Report 1
 
-[Read the July 7, 2026 report](case-study.html)
+[Read Reference Cleanup Report 1](case-study.html)
 
 Focuses on web and working-paper `@misc` formatting, publisher locations, duplicate-key cleanup, and JOP-style rendered-reference checks.
 
@@ -198,9 +198,9 @@ Focuses on web and working-paper `@misc` formatting, publisher locations, duplic
 
 <div class="summary-card" markdown="1">
 
-### Audience-Cost Meta-Analysis
+### Reference Cleanup Report 2
 
-[Read the July 6, 2026 report](case-study-takei-horiuchi.html)
+[Read Reference Cleanup Report 2](case-study-takei-horiuchi.html)
 
 Focuses on APSA/IO-style metadata cleanup, online-first article status, unpublished-manuscript rendering, and active-citation-only scope control.
 
