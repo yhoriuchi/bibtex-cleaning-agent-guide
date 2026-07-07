@@ -58,11 +58,15 @@ howpublished = {\textit{Source}, Month Day, available at \url{https://...}, last
 1. Updated `.bib` file.
 2. Markdown cleanup report with:
    - date checked and access date used;
+   - AI model and reasoning level or intelligence setting, for example `Codex GPT-5.5` and `Extra High`;
+   - project/manuscript name, workspace, file changed, bibliography style, and verification status;
    - files inspected;
+   - summary of the cleaning process and results;
    - conventions applied;
    - substantive metadata changes with sources;
    - web and working-paper formatting changes;
    - title/capitalization/style cleanup;
+   - entry-by-entry changes;
    - original sources checked;
    - publisher-location changes;
    - duplicate-key and database-hygiene changes;

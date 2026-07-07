@@ -8,7 +8,7 @@ The main instructions are in [AGENTS.md](AGENTS.md). A publishable GitHub Pages 
 
 - A step-by-step agent protocol for cleaning `.bib` files without changing citation style by accident.
 - A copy-paste prompt in [prompts/bibtex-cleanup-agent.md](prompts/bibtex-cleanup-agent.md).
-- A structured cleanup report template in [templates/cleanup-report.md](templates/cleanup-report.md).
+- A structured cleanup report template in [templates/cleanup-report.md](templates/cleanup-report.md) that records date, AI model, reasoning level, process summary, verification results, and entry-by-entry changes.
 - Case-study reports in [examples/](examples/), including manuscript-specific cleanup logs that can be removed before public release if needed.
 - A GitHub Actions workflow that can publish the site with GitHub Pages.
 
@@ -22,7 +22,7 @@ Give the agent:
 4. The access date to use for web sources.
 5. The instructions in [AGENTS.md](AGENTS.md) or the prompt in [prompts/bibtex-cleanup-agent.md](prompts/bibtex-cleanup-agent.md).
 
-Require the agent to return both a cleaned `.bib` file and a cleanup report that records every substantive metadata change.
+Require the agent to return both a cleaned `.bib` file and a detailed Markdown cleanup report that records the AI model, reasoning level, cleaning process, verification results, and every substantive entry-by-entry metadata change.
 
 ## GitHub Pages
 

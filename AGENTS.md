@@ -188,20 +188,26 @@ Check:
 
 ## Required Cleanup Report
 
-Return a Markdown report with:
+Return a detailed Markdown report for every cleanup run. The report is part of the deliverable, not an optional summary. It should be detailed enough that a user or later agent can reconstruct what was checked, what was changed, what evidence supported each change, and what risks remain.
 
-1. Date checked and access date used.
+Include:
+
+1. Report metadata: date checked, access date used, AI model, reasoning level or intelligence setting, project/manuscript name, workspace, file changed, bibliography style, and verification status.
 2. Scope and files inspected.
-3. Conventions applied.
-4. Table of substantive metadata and publication-status changes.
-5. Table of web and working-paper formatting changes.
-6. Table of title, capitalization, and style cleanup.
-7. Table of publisher-location changes, if relevant.
-8. Table of duplicate-key and database-hygiene changes.
-9. Items checked but left unchanged, with reasons.
-10. Original sources checked, especially for publication status, URLs, title capitalization, and publisher locations.
-11. Verification commands and results.
-12. Remaining warnings or risks.
+3. Summary of the cleaning process and results.
+4. Conventions applied.
+5. Table of substantive metadata and publication-status changes.
+6. Table of web and working-paper formatting changes.
+7. Table of title, capitalization, and style cleanup.
+8. Table of publisher-location changes, if relevant.
+9. Entry-by-entry changes for all substantive edits.
+10. Table of duplicate-key and database-hygiene changes.
+11. Items checked but left unchanged, with reasons.
+12. Original sources checked, especially for publication status, URLs, title capitalization, and publisher locations.
+13. Verification commands and results.
+14. Remaining warnings or risks.
+
+For AI provenance, use explicit values when available, such as `AI model: Codex GPT-5.5` and `Reasoning level: Extra High`. If the exact model or reasoning setting is unavailable, write `not reported` rather than guessing.
 
 ## Stop Conditions
 

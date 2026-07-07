@@ -146,14 +146,20 @@ The exact commands may differ, but the agent should always check:
 
 ## Report Structure
 
+Every cleanup run should produce a detailed Markdown report. This is important for provenance: the user should be able to see which AI system did the work, how much reasoning was requested, which sources were checked, and what changed entry by entry.
+
 The final cleanup report should include:
 
 - date checked and access date used;
+- AI model and reasoning level or intelligence setting, such as `Codex GPT-5.5` and `Extra High`;
+- project/manuscript name, workspace, file changed, bibliography style, and verification status;
 - scope and files inspected;
+- summary of the cleaning process and results;
 - conventions applied;
 - substantive publication-status and metadata changes;
 - web and working-paper formatting changes;
 - title, capitalization, and style cleanup;
+- entry-by-entry changes;
 - original sources checked;
 - publisher-location normalization;
 - duplicate-key and database-hygiene changes;

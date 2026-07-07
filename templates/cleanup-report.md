@@ -1,8 +1,18 @@
 # Reference Cleanup Report
 
-Date checked: `[Month Day, Year]`
+## Report Metadata
 
-Access date used for online sources: `[Month Day, Year]`
+- Date checked: `[Month Day, Year]`
+- Access date used for online sources: `[Month Day, Year]`
+- AI model: `[e.g., Codex GPT-5.5 / not reported]`
+- Reasoning level or intelligence setting: `[e.g., Extra High / not reported]`
+- Project: `[project name]`
+- Manuscript: `[manuscript title]`
+- Workspace: `[path]`
+- File changed: `[path to .bib file]`
+- Documentation file: `[path to this report]`
+- Bibliography style left unchanged or changed: `[.bst/style guide]`
+- Verification status: `[build/check result]`
 
 ## Scope
 
@@ -20,6 +30,13 @@ Active citation set:
 - Appendix citation keys:
 - Full database duplicate-key scan:
 
+## Summary of Cleaning Process and Results
+
+- `[Brief summary of how active citations were identified]`
+- `[Brief summary of source-checking process]`
+- `[Brief summary of major cleanup categories]`
+- `[Brief summary of verification result]`
+
 ## Conventions Applied
 
 - `[Convention 1]`
@@ -35,6 +52,12 @@ Title capitalization convention applied:
 | BibTeX key | Change made | Source or status check |
 |---|---|---|
 | `[key]` | `[change]` | `[source]` |
+
+## Entry-by-Entry Changes
+
+- `[BibTeX key]`
+  - `[Change made]`
+  - `[Source checked or reason for change]`
 
 ## Original Sources Checked
 
