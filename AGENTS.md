@@ -62,7 +62,19 @@ Use `@article` for published journal articles. Prefer complete fields:
 
 Use `pages = {1--22}` with a double hyphen. Store DOI values without `https://doi.org/`.
 
-For online-first articles, follow the target style. If the style renders online-first metadata acceptably with a journal label and a `FirstView`, `Advance online publication`, or equivalent volume/status field, use that pattern consistently and explain it in the report.
+For online-first articles that are published online but do not yet have assigned volume, issue, or page numbers, default to a journal-name comma plus `volume = {forthcoming}` pattern. The comma inside the `journal` field is intentional for local `.bst` styles that would otherwise print an awkward space or punctuation mark before the status label. Do not remove it as a typo.
+
+```bibtex
+@article{Horiuchi2026Civilian,
+  author  = {Horiuchi, Yusaku and Tago, Atsushi},
+  title   = {Civilian Control and Casualty Sensitivity in a Pacifist Democracy: Evidence from Japan's 2021 Evacuation Mission},
+  journal = {Conflict Management and Peace Science,},
+  volume  = {forthcoming},
+  year    = {2026}
+}
+```
+
+Use `forthcoming` as the default status label unless the user, journal, or publisher uses another equivalent label. User-selected alternatives such as `FirstView`, `Advance online publication`, or a publisher-specific online-first label are acceptable, but use the chosen label consistently and explain it in the report. Do not add temporary page ranges for online-first articles unless the publisher has assigned them as stable article pages.
 
 ### Working Papers and Preprints
 
@@ -134,10 +146,11 @@ Use `@incollection` for chapters in edited volumes. Include chapter author, titl
 2. Normalize page ranges to `--`.
 3. Normalize DOI fields to the bare DOI.
 4. Keep stable publisher links for books and journal articles out of visible web-citation fields unless the target style requires them.
-5. Use `url` or `howpublished` consistently with the `.bst` behavior.
-6. Avoid duplicate metadata in both `url` and `howpublished` unless the style requires it.
-7. Preserve existing BibTeX keys unless there is a duplicate-key conflict.
-8. Do not invent missing authors, dates, journals, page ranges, or issue numbers.
+5. For online-first articles without final issue/page metadata, keep the intentional comma in `journal = {Journal Name,}` and put the status label in `volume`.
+6. Use `url` or `howpublished` consistently with the `.bst` behavior.
+7. Avoid duplicate metadata in both `url` and `howpublished` unless the style requires it.
+8. Preserve existing BibTeX keys unless there is a duplicate-key conflict.
+9. Do not invent missing authors, dates, journals, page ranges, or issue numbers.
 
 ## Duplicate and Syntax Audit
 

@@ -85,6 +85,22 @@ For working papers and preprints with DOIs, keep the DOI while formatting the so
 }
 ```
 
+## Online-First Journal Articles
+
+For articles that are published online before final volume, issue, or page numbers are assigned, default to a journal-name comma plus `volume = {forthcoming}`. The comma after the journal name is intentional for local `.bst` rendering and should not be removed as a typo.
+
+```bibtex
+@article{Horiuchi2026Civilian,
+  author  = {Horiuchi, Yusaku and Tago, Atsushi},
+  title   = {Civilian Control and Casualty Sensitivity in a Pacifist Democracy: Evidence from Japan's 2021 Evacuation Mission},
+  journal = {Conflict Management and Peace Science,},
+  volume  = {forthcoming},
+  year    = {2026}
+}
+```
+
+Use `forthcoming` as the default status label. Users may choose `FirstView`, `Advance online publication`, or an equivalent publisher-specific label when that better matches the journal's terminology.
+
 ## Metadata Evidence Hierarchy
 
 1. Publisher or journal landing page.
@@ -104,6 +120,7 @@ Do not rely only on citation aggregators when a stronger source exists.
 - Normalize page ranges to `--`.
 - Store DOI values without `https://doi.org/`.
 - Remove empty fields such as `number = {}`.
+- For online-first articles without final issue/page metadata, keep `journal = {Journal Name,}` and put `forthcoming`, `FirstView`, or the chosen equivalent in `volume`.
 - Preserve existing BibTeX keys unless resolving duplicate-key conflicts.
 - Keep stable publisher links for books and journal articles out of visible web-citation fields unless the target style requires them.
 - Add publisher locations only if the manuscript's style already uses them.
