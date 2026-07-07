@@ -26,11 +26,21 @@ Active citation set:
 - `[Convention 2]`
 - `[Convention 3]`
 
+Title capitalization convention applied:
+
+- `[Title Case / sentence case / other style-guide rule]`
+
 ## Substantive Publication-Status and Metadata Changes
 
 | BibTeX key | Change made | Source or status check |
 |---|---|---|
 | `[key]` | `[change]` | `[source]` |
+
+## Original Sources Checked
+
+| BibTeX key | Original source checked | Result |
+|---|---|---|
+| `[key]` | `[publisher page / DOI / official page / cited web page]` | `[metadata confirmed or uncertainty recorded]` |
 
 ## Web and Working-Paper Formatting
 
@@ -48,7 +58,7 @@ Active citation set:
 
 | BibTeX key | Change made |
 |---|---|
-| `[key]` | `[change]` |
+| `[key]` | `address = {[location]}` added or normalized for `[publisher]`; rendered form should be `[Location]: [Publisher]`. |
 
 ## BibTeX Database Hygiene
 

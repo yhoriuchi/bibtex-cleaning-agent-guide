@@ -8,7 +8,7 @@ Do not merely prettify entries. Treat this as a source-backed audit. Every subst
 
 1. Preserve the manuscript's existing citation style unless the user explicitly changes it.
 2. Work from the active citation set first. Use generated `.aux` files when available.
-3. Verify publication status and metadata from reliable sources before changing entries.
+3. Check the original source for each active item as much as possible before changing entries. Prefer the publisher, journal, preprint server, institutional page, official web page, or cited article page over copied library records and citation exports.
 4. Avoid silent inference. If a publication date, issue, page range, DOI, or publisher location is uncertain, record the uncertainty and leave the field unchanged unless the evidence is strong.
 5. Keep a written report of all substantive changes, sources checked, and verification commands.
 6. Do not delete entries solely because they are uncited. Delete only duplicates, malformed commented records that BibTeX still scans, or entries the user explicitly asks you to remove.
@@ -31,7 +31,7 @@ Treat active cited entries as the primary cleanup target. Also scan the full `.b
 
 Use the strongest available source for each metadata decision:
 
-1. Publisher or journal landing page for the item.
+1. Original publisher, journal, book, preprint, institutional, government, news, or web landing page for the item.
 2. DOI resolver landing page.
 3. Crossref, DataCite, PubMed, JSTOR, Cambridge, Oxford, Wiley, SAGE, Taylor & Francis, Elsevier, Springer, or another publisher database.
 4. Official book publisher page or library catalog.
@@ -39,7 +39,7 @@ Use the strongest available source for each metadata decision:
 6. The cited web page itself.
 7. Reliable news or archival sources.
 
-Do not use citation aggregators as the only source when a publisher, DOI, or official page is available.
+Do not use citation aggregators, Zotero imports, Google Scholar, or copied BibTeX records as the only source when an original source, publisher, DOI, or official page is available.
 
 ## Entry-Type Rules
 
@@ -78,7 +78,7 @@ Use `forthcoming` as the default status label unless the user, journal, or publi
 
 ### Working Papers and Preprints
 
-Use `@misc` unless the local style has a better working-paper entry type. Include the repository, working-paper series, preprint server, or author/institutional page in `howpublished`. Preserve a DOI if one exists.
+Use `@misc` unless the local style has a better working-paper entry type. Include the repository, working-paper series, preprint server, author page, institutional page, or other public URL in `howpublished`. Preserve a DOI if one exists. If no public URL is available, state that the manuscript is available from the author or record the availability status in the cleanup report.
 
 Recommended pattern:
 
@@ -94,7 +94,7 @@ Recommended pattern:
 
 ### News, Policy, Government, and Web Sources
 
-Use `@misc` with source, date if known, URL, and access date in `howpublished`.
+Use `@misc` with source, date if known, URL, and access date in `howpublished` for newspaper articles, magazine articles, policy pages, government pages, and ordinary web sources. Do not leave these as `@techreport` or another type merely because a reference manager guessed that entry type.
 
 Recommended pattern:
 
@@ -113,7 +113,7 @@ Remove source names from titles when they were imported by Zotero or a browser e
 
 ### Books
 
-Use `@book` for authored or edited books. Include publisher location only if the manuscript's house style uses publisher locations.
+Use `@book` for authored or edited books. Include publisher location by default unless the manuscript's style guide explicitly omits publisher locations.
 
 ```bibtex
 @book{key,
@@ -127,18 +127,21 @@ Use `@book` for authored or edited books. Include publisher location only if the
 
 Normalize locations conservatively, such as `Chicago, IL`, `New York, NY`, `Ithaca, NY`, `Princeton, NJ`, or `New Haven, CT`.
 
+The rendered reference should be able to produce a location-plus-publisher form such as `New York, NY: Cambridge University Press` when the `.bst` supports it.
+
 ### Chapters and Edited Volumes
 
-Use `@incollection` for chapters in edited volumes. Include chapter author, title, booktitle, editor, publisher, address if used, year, and pages.
+Use `@incollection` for chapters in edited volumes. Include chapter author, title, booktitle, editor, publisher, address, year, and pages unless the style guide explicitly omits publisher locations.
 
 ## Title and Capitalization Rules
 
-1. Follow the target bibliography style's capitalization convention.
+1. Check whether the target style requires Title Case, sentence case, or another title-capitalization convention, then apply that convention consistently.
 2. Preserve acronyms and country names with braces, such as `{U.S.}`, `{US}`, `{UK}`, `{UN}`, `{EU}`, `{IO}`, `{NATO}`, and `{APSA}`.
 3. Preserve proper nouns and terms that BibTeX might downcase incorrectly.
 4. Do not over-brace entire titles unless the local style already does so.
 5. Remove imported website suffixes from titles.
 6. Normalize punctuation without changing the author's meaning.
+7. Record in the cleanup report whether Title Case or sentence case was applied.
 
 ## Field Hygiene
 
@@ -147,10 +150,11 @@ Use `@incollection` for chapters in edited volumes. Include chapter author, titl
 3. Normalize DOI fields to the bare DOI.
 4. Keep stable publisher links for books and journal articles out of visible web-citation fields unless the target style requires them.
 5. For online-first articles without final issue/page metadata, keep the intentional comma in `journal = {Journal Name,}` and put the status label in `volume`.
-6. Use `url` or `howpublished` consistently with the `.bst` behavior.
-7. Avoid duplicate metadata in both `url` and `howpublished` unless the style requires it.
-8. Preserve existing BibTeX keys unless there is a duplicate-key conflict.
-9. Do not invent missing authors, dates, journals, page ranges, or issue numbers.
+6. For unpublished manuscripts, working papers, preprints, newspaper articles, policy sources, government pages, and web sources, use `@misc` with a public URL in `howpublished` whenever a URL exists.
+7. Use `url` or `howpublished` consistently with the `.bst` behavior.
+8. Avoid duplicate metadata in both `url` and `howpublished` unless the style requires it.
+9. Preserve existing BibTeX keys unless there is a duplicate-key conflict.
+10. Do not invent missing authors, dates, journals, page ranges, or issue numbers.
 
 ## Duplicate and Syntax Audit
 
@@ -179,7 +183,7 @@ Check:
 2. No undefined citations.
 3. No missing bibliography fields that affect active references.
 4. Rendered references display web citations as intended.
-5. Book and chapter entries render publisher locations if the house style expects them.
+5. Book and chapter entries render publisher locations unless the style guide explicitly omits them.
 6. Remaining warnings are unrelated to bibliography metadata or are explicitly reported.
 
 ## Required Cleanup Report
@@ -195,8 +199,9 @@ Return a Markdown report with:
 7. Table of publisher-location changes, if relevant.
 8. Table of duplicate-key and database-hygiene changes.
 9. Items checked but left unchanged, with reasons.
-10. Verification commands and results.
-11. Remaining warnings or risks.
+10. Original sources checked, especially for publication status, URLs, title capitalization, and publisher locations.
+11. Verification commands and results.
+12. Remaining warnings or risks.
 
 ## Stop Conditions
 

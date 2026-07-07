@@ -21,8 +21,8 @@ Also scan the full `.bib` database for duplicate keys, malformed entries, and co
 ## Rules
 
 1. Preserve the existing citation style unless explicitly instructed otherwise.
-2. Verify publication status and metadata from reliable sources before changing an entry.
-3. Use publisher pages, DOI landing pages, Crossref, official preprint servers, official institutional pages, or the cited page itself as evidence.
+2. Check the original source of each active item as much as possible before changing an entry.
+3. Use publisher pages, DOI landing pages, Crossref, official preprint servers, official institutional pages, official news/web pages, or the cited page itself as evidence. Do not rely only on citation exports or aggregators when an original source is available.
 4. Do not invent metadata. Leave uncertain fields unchanged and report the uncertainty.
 5. Preserve BibTeX keys unless there is a duplicate-key problem.
 6. Use `@article` for published journal articles.
@@ -39,7 +39,7 @@ Also scan the full `.bib` database for duplicate keys, malformed entries, and co
 ```
 
 8. Do not remove the comma in `journal = {Journal Name,}` for online-first records; it is a local `.bst` rendering workaround, not a typo.
-9. Use `@misc` for working papers, preprints, news, policy, government, and web sources unless the local style requires another type.
+9. Use `@misc` for unpublished manuscripts, working papers, preprints, newspaper articles, policy sources, government pages, and web sources unless the local style requires another type. Add a public URL in `howpublished` whenever one exists.
 10. For web and working-paper entries, prefer:
 
 ```bibtex
@@ -48,8 +48,10 @@ howpublished = {\textit{Source}, Month Day, available at \url{https://...}, last
 
 11. Protect acronyms and country names with braces, such as `{U.S.}`, `{US}`, `{UK}`, `{UN}`, `{EU}`, `{IO}`, and `{NATO}`.
 12. Normalize page ranges to `--`, DOI fields to bare DOI values, and remove empty fields.
-13. Keep stable publisher links for books and journal articles out of visible web-citation fields unless the style requires them.
-14. Compile and verify the bibliography after editing.
+13. Add publisher locations for books and chapters unless the style guide explicitly omits them; for example, use `address = {New York, NY}` with `publisher = {Cambridge University Press}` so the rendered reference can show `New York, NY: Cambridge University Press`.
+14. Check whether the target style requires Title Case or sentence case, apply it consistently, and protect acronyms or proper nouns that BibTeX might downcase.
+15. Keep stable publisher links for books and journal articles out of visible web-citation fields unless the style requires them.
+16. Compile and verify the bibliography after editing.
 
 ## Deliverables
 
@@ -61,6 +63,8 @@ howpublished = {\textit{Source}, Month Day, available at \url{https://...}, last
    - substantive metadata changes with sources;
    - web and working-paper formatting changes;
    - title/capitalization/style cleanup;
+   - original sources checked;
+   - publisher-location changes;
    - duplicate-key and database-hygiene changes;
    - entries checked but left unchanged;
    - verification commands and results;
