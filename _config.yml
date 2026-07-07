@@ -1,0 +1,10 @@
+title: BibTeX Cleaning Agent Guide
+description: Detailed instructions for agentic AI systems cleaning BibTeX entries for LaTeX manuscripts.
+markdown: kramdown
+kramdown:
+  input: GFM
+exclude:
+  - .git/
+  - .github/
+  - _site/
+  - .DS_Store
