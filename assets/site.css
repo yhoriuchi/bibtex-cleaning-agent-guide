@@ -91,6 +91,10 @@ a {
   margin: 28px 0 36px;
 }
 
+.case-grid {
+  margin-top: 18px;
+}
+
 .summary-card {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -101,6 +105,11 @@ a {
 .summary-card h2 {
   margin-top: 0;
   font-size: 1.08rem;
+}
+
+.summary-card h3 {
+  margin-top: 0;
+  font-size: 1.03rem;
 }
 
 .back-link {

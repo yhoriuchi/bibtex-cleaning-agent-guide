@@ -143,9 +143,9 @@ The final cleanup report should include:
 
 Use the [cleanup report template](cleanup-report-template.html) to keep this consistent across projects.
 
-## Case Study Lessons
+## Case Studies
 
-The included [July 7, 2026 example report](case-study.html) illustrates common repairs:
+The included case-study reports illustrate common repairs:
 
 - converting web, news, policy, and working-paper records to `@misc`;
 - moving source, date, URL, and access date into `howpublished`;
@@ -153,6 +153,33 @@ The included [July 7, 2026 example report](case-study.html) illustrates common r
 - protecting `{U.S.}`, `{US}`, `{UK}`, `{UN}`, and `{IO}` capitalization;
 - preserving publisher locations when the manuscript style expects them;
 - removing duplicate keys and malformed records that BibTeX still scans;
+- reworking unpublished-manuscript entries so a local `.bst` prints a sensible status line;
+- avoiding article DOI changes when Crossref returns only a preprint DOI;
+- converting misclassified news items so the bibliography no longer labels them as technical reports;
 - verifying with `latexmk`, `bibtex`, `.blg`, `.log`, and rendered-reference spot checks.
+
+<section class="summary-grid case-grid" markdown="1">
+
+<div class="summary-card" markdown="1">
+
+### Journal of Politics Submission
+
+[Read the July 7, 2026 report](case-study.html)
+
+Focuses on web and working-paper `@misc` formatting, publisher locations, duplicate-key cleanup, and JOP-style rendered-reference checks.
+
+</div>
+
+<div class="summary-card" markdown="1">
+
+### Audience-Cost Meta-Analysis
+
+[Read the July 6, 2026 report](case-study-takei-horiuchi.html)
+
+Focuses on APSA/IO-style metadata cleanup, online-first article status, unpublished-manuscript rendering, and active-citation-only scope control.
+
+</div>
+
+</section>
 
 </main>

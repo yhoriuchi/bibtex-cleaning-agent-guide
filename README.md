@@ -9,7 +9,7 @@ The main instructions are in [AGENTS.md](AGENTS.md). A publishable GitHub Pages 
 - A step-by-step agent protocol for cleaning `.bib` files without changing citation style by accident.
 - A copy-paste prompt in [prompts/bibtex-cleanup-agent.md](prompts/bibtex-cleanup-agent.md).
 - A structured cleanup report template in [templates/cleanup-report.md](templates/cleanup-report.md).
-- A case-study report in [examples/reference-cleanup-report-2026-07-07.md](examples/reference-cleanup-report-2026-07-07.md).
+- Case-study reports in [examples/](examples/), including manuscript-specific cleanup logs that can be removed before public release if needed.
 - A GitHub Actions workflow that can publish the site with GitHub Pages.
 
 ## Suggested Use
@@ -47,4 +47,4 @@ https://USERNAME.github.io/REPOSITORY/
 bibtex-cleaning-agent-guide
 ```
 
-If publishing the example report publicly would reveal too much about an active manuscript, remove the `examples/` file before pushing.
+If publishing the example reports publicly would reveal too much about active manuscripts, remove the relevant files in `examples/` before pushing.
