@@ -19,6 +19,8 @@ title: BibTeX Cleaning Agent Guide
 
 A source-backed protocol for agentic AI systems that clean BibTeX entries for LaTeX manuscripts without damaging citation style, publication metadata, or rendered references.
 
+If you are starting a new manuscript, consider using my [LaTeX Research Article Template](https://github.com/yhoriuchi/latex-research-article-template) so the bibliography, manuscript structure, and compilation workflow are easier for an agent to inspect and maintain.
+
 <div class="hero-actions" markdown="1">
 <button type="button" class="button button-primary" id="copy-agent-instructions">Copy Agent Instructions</button>
 <span class="copy-status" id="copy-agent-instructions-status" aria-live="polite"></span>
