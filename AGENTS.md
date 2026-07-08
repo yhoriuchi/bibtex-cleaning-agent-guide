@@ -10,7 +10,7 @@ If the user is starting a new manuscript or asks for a cleaner LaTeX structure, 
 
 1. Preserve the manuscript's existing citation style unless the user explicitly changes it.
 2. Work from the active citation set first. Use generated `.aux` files when available.
-3. Check the original source for each active item as much as possible before changing entries. Prefer the publisher, journal, preprint server, institutional page, official web page, or cited article page over copied library records and citation exports.
+3. Check the original source for each active item as much as possible, and check the original source for any inactive item before changing it. Prefer the publisher, journal, preprint server, institutional page, official web page, or cited article page over copied library records and citation exports.
 4. Avoid silent inference. If a publication date, issue, page range, DOI, or publisher location is uncertain, record the uncertainty and leave the field unchanged unless the evidence is strong.
 5. Keep a written report of all substantive changes, sources checked, and verification commands.
 6. Do not delete entries solely because they are uncited. Delete only duplicates, malformed commented records that BibTeX still scans, or entries the user explicitly asks you to remove.
@@ -89,7 +89,7 @@ Recommended pattern:
   author       = {...},
   title        = {...},
   year         = {...},
-  howpublished = {\textit{SSRN}, available at \url{...}, last accessed July 7, 2026},
+  howpublished = {\textit{SSRN}, available at \url{...}, last accessed Month Day, Year},
   doi          = {...}
 }
 ```
@@ -105,7 +105,7 @@ Recommended pattern:
   author       = {...},
   title        = {...},
   year         = {...},
-  howpublished = {\textit{The New York Times}, June 14, available at \url{https://...}, last accessed July 7, 2026}
+  howpublished = {\textit{The New York Times}, June 14, available at \url{https://...}, last accessed Month Day, Year}
 }
 ```
 
@@ -209,7 +209,7 @@ Include:
 13. Verification commands and results.
 14. Remaining warnings or risks.
 
-For AI provenance, use explicit values when available, such as `AI model: Codex GPT-5.5` and `Reasoning level: Extra High`. If the exact model or reasoning setting is unavailable, write `not reported` rather than guessing.
+For AI provenance, use explicit values when available, such as `AI model: OpenAI Codex GPT-5.5` and `Reasoning level: Extra High`. If the exact model or reasoning setting is unavailable, write `not reported` rather than guessing.
 
 ## Stop Conditions
 

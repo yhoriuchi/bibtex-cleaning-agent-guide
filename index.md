@@ -86,7 +86,7 @@ Use `@misc` for unpublished manuscripts, working papers, preprints, newspaper ar
   author       = {...},
   title        = {...},
   year         = {...},
-  howpublished = {\textit{The New York Times}, June 14, available at \url{https://...}, last accessed July 7, 2026}
+  howpublished = {\textit{The New York Times}, June 14, available at \url{https://...}, last accessed Month Day, Year}
 }
 ```
 
@@ -97,7 +97,7 @@ For working papers and preprints with DOIs, keep the DOI while formatting the so
   author       = {...},
   title        = {...},
   year         = {...},
-  howpublished = {\textit{SSRN}, available at \url{https://...}, last accessed July 7, 2026},
+  howpublished = {\textit{SSRN}, available at \url{https://...}, last accessed Month Day, Year},
   doi          = {10.2139/ssrn.0000000}
 }
 ```
@@ -166,7 +166,7 @@ Every cleanup run should produce a detailed Markdown report. This is important f
 The final cleanup report should include:
 
 - date checked and access date used;
-- AI model and reasoning level or intelligence setting, such as `Codex GPT-5.5` and `Extra High`;
+- AI model and reasoning level or intelligence setting, such as `OpenAI Codex GPT-5.5` and `Extra High`;
 - project/manuscript name, workspace, file changed, bibliography style, and verification status;
 - scope and files inspected;
 - summary of the cleaning process and results;

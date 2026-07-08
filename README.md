@@ -11,7 +11,7 @@ Related template: If you are starting a new manuscript, consider using my [LaTeX
 - A step-by-step agent protocol for cleaning `.bib` files without changing citation style by accident.
 - A copy-paste prompt in [prompts/bibtex-cleanup-agent.md](prompts/bibtex-cleanup-agent.md).
 - A structured cleanup report template in [templates/cleanup-report.md](templates/cleanup-report.md) that records date, AI model, reasoning level, process summary, verification results, and entry-by-entry changes.
-- A GitHub Actions workflow that can publish the site with GitHub Pages.
+- A GitHub Actions workflow that publishes the site with GitHub Pages.
 
 ## Suggested Use
 
@@ -29,4 +29,4 @@ Require the agent to return both a cleaned `.bib` file and a detailed Markdown c
 
 The live guide is published at <https://yhoriuchi.github.io/bibtex-cleaning-agent-guide/>. This repo includes `.github/workflows/pages.yml`, which builds the site from [index.md](index.md) and publishes it through GitHub Pages.
 
-The guide is intentionally example-free so users can apply the protocol without exposing manuscript-specific cleanup logs.
+The guide intentionally omits manuscript-specific cleanup examples so users can apply the protocol without exposing project-specific logs.

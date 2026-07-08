@@ -4,7 +4,7 @@
 
 - Date checked: `[Month Day, Year]`
 - Access date used for online sources: `[Month Day, Year]`
-- AI model: `[e.g., Codex GPT-5.5 / not reported]`
+- AI model: `[e.g., OpenAI Codex GPT-5.5 / not reported]`
 - Reasoning level or intelligence setting: `[e.g., Extra High / not reported]`
 - Project: `[project name]`
 - Manuscript: `[manuscript title]`

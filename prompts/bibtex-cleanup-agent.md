@@ -23,7 +23,7 @@ Also scan the full `.bib` database for duplicate keys, malformed entries, and co
 ## Rules
 
 1. Preserve the existing citation style unless explicitly instructed otherwise.
-2. Check the original source of each active item as much as possible before changing an entry.
+2. Check the original source of each active item as much as possible, and check the original source of any inactive item before changing it.
 3. Use publisher pages, DOI landing pages, Crossref, official preprint servers, official institutional pages, official news/web pages, or the cited page itself as evidence. Do not rely only on citation exports or aggregators when an original source is available.
 4. Do not invent metadata. Leave uncertain fields unchanged and report the uncertainty.
 5. Preserve BibTeX keys unless there is a duplicate-key problem.
@@ -60,7 +60,7 @@ howpublished = {\textit{Source}, Month Day, available at \url{https://...}, last
 1. Updated `.bib` file.
 2. Markdown cleanup report with:
    - date checked and access date used;
-   - AI model and reasoning level or intelligence setting, for example `Codex GPT-5.5` and `Extra High`;
+   - AI model and reasoning level or intelligence setting, for example `OpenAI Codex GPT-5.5` and `Extra High`;
    - project/manuscript name, workspace, file changed, bibliography style, and verification status;
    - files inspected;
    - summary of the cleaning process and results;
