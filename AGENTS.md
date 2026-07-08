@@ -173,7 +173,7 @@ Run a full database audit even when only active citations are being cleaned:
 
 Use the manuscript's normal build command when known. Typical commands:
 
-```sh
+```text
 latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 bibtex main.aux
 bibtex appendix.aux

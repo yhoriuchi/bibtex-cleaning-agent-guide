@@ -144,7 +144,7 @@ Do not rely only on citation aggregators, Zotero imports, Google Scholar, or cop
 
 ## Verification Checklist
 
-```sh
+```text
 latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 bibtex main.aux
 bibtex appendix.aux
