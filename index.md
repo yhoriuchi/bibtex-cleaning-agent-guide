@@ -13,7 +13,7 @@ title: BibTeX Cleaning Agent Guide
 - **Author:** Yusaku Horiuchi
 - **Affiliation:** Syde P. Deeb Eminent Scholar in Political Science, Florida State University
 - **Created:** July 7, 2026
-- **Last revised:** July 7, 2026
+- **Last revised:** July 10, 2026
 
 ![Page views](https://hits.sh/yhoriuchi.github.io/bibtex-cleaning-agent-guide.svg?label=page%20views)
 
@@ -43,6 +43,7 @@ If you are starting a new manuscript, consider using my [LaTeX Research Article 
 
 - Work from active citations in `.aux` files.
 - Check original sources as much as possible before changing entries.
+- Record a checked source for every active citation, or mark it unverified with a reason.
 - Preserve the manuscript's style unless the user changes it.
 - Apply the style guide's Title Case or sentence-case rule consistently.
 - Compile the manuscript and inspect BibTeX warnings.
@@ -69,7 +70,7 @@ If you are starting a new manuscript, consider using my [LaTeX Research Article 
 <ol class="workflow">
   <li><strong>Establish scope.</strong> Identify the manuscript root, bibliography style, `.bib` files, and active citation keys from `main.aux`, appendix `.aux` files, or a regenerated build.</li>
   <li><strong>Audit the database.</strong> Scan the full `.bib` file for duplicate keys, malformed entries, stray characters, and records inside LaTeX comments that BibTeX may still parse.</li>
-  <li><strong>Verify metadata.</strong> Check original sources as much as possible: publisher pages, DOI landing pages, Crossref, official preprint servers, institutional pages, news pages, government pages, and cited web pages before changing fields.</li>
+  <li><strong>Verify metadata.</strong> Check original sources as much as possible: publisher pages, DOI landing pages, Crossref, official preprint servers, institutional pages, news pages, government pages, and cited web pages before changing fields. For every active citation key, record at least one source checked; if no original or strong source can be found or accessed, mark the entry as unverified, explain why, and avoid uncertain metadata changes.</li>
   <li><strong>Normalize by entry type.</strong> Use `@article` for published journal articles, `@book` and `@incollection` for books and chapters, and `@misc` with URLs for unpublished manuscripts, working papers, newspaper articles, web, news, policy, and government sources.</li>
   <li><strong>Protect rendering.</strong> Preserve acronyms such as `{U.S.}`, `{US}`, `{UK}`, `{UN}`, `{EU}`, `{IO}`, and `{NATO}` where BibTeX might downcase them.</li>
   <li><strong>Apply the capitalization rule.</strong> Check the style guide's Title Case versus sentence-case convention and apply it consistently.</li>
@@ -130,6 +131,8 @@ Use `forthcoming` as the default status label. Users may choose `FirstView`, `Ad
 
 Do not rely only on citation aggregators, Zotero imports, Google Scholar, or copied BibTeX records when an original source or stronger source exists.
 
+A bibliography cleanup is not complete unless every active citation is either verified against a recorded source or explicitly listed as unverified with a reason.
+
 ## Style Rules Worth Making Explicit
 
 - Check whether the target style requires Title Case or sentence case; normalize titles to that style while preserving acronyms and proper nouns with braces.
@@ -175,6 +178,7 @@ The final cleanup report should include:
 - web and working-paper formatting changes;
 - title, capitalization, and style cleanup;
 - entry-by-entry changes;
+- active-citation source audit, with citation key, active status, source checked, URL or DOI, fields verified, changes made, and remaining uncertainty;
 - original sources checked;
 - publisher-location normalization;
 - duplicate-key and database-hygiene changes;

@@ -53,6 +53,14 @@ Title capitalization convention applied:
 |---|---|---|
 | `[key]` | `[change]` | `[source]` |
 
+## Active-Citation Source Audit
+
+Every active citation must appear here. If no original or strong source could be found or accessed, mark the entry as unverified and explain the reason in the remaining uncertainty column.
+
+| Citation key | Active? | Source checked | URL or DOI | Fields verified | Changes made | Remaining uncertainty |
+|---|---|---|---|---|---|---|
+| `[key]` | `[yes/no]` | `[publisher page / DOI landing page / official page / cited web page / unverified]` | `[URL or DOI]` | `[fields]` | `[changes or none]` | `[uncertainty or none]` |
+
 ## Entry-by-Entry Changes
 
 - `[BibTeX key]`

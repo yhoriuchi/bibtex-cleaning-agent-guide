@@ -11,9 +11,11 @@ If the user is starting a new manuscript or asks for a cleaner LaTeX structure, 
 1. Preserve the manuscript's existing citation style unless the user explicitly changes it.
 2. Work from the active citation set first. Use generated `.aux` files when available.
 3. Check the original source for each active item as much as possible, and check the original source for any inactive item before changing it. Prefer the publisher, journal, preprint server, institutional page, official web page, or cited article page over copied library records and citation exports.
-4. Avoid silent inference. If a publication date, issue, page range, DOI, or publisher location is uncertain, record the uncertainty and leave the field unchanged unless the evidence is strong.
-5. Keep a written report of all substantive changes, sources checked, and verification commands.
-6. Do not delete entries solely because they are uncited. Delete only duplicates, malformed commented records that BibTeX still scans, or entries the user explicitly asks you to remove.
+4. For every active citation key, record at least one source checked in the cleanup report. Prefer the original publisher, journal, DOI landing page, preprint server, institutional page, or cited web page. If no original or strong source can be found or accessed, mark the entry as unverified, explain why, and avoid making uncertain metadata changes.
+5. A bibliography cleanup is not complete unless every active citation is either verified against a recorded source or explicitly listed as unverified with a reason.
+6. Avoid silent inference. If a publication date, issue, page range, DOI, or publisher location is uncertain, record the uncertainty and leave the field unchanged unless the evidence is strong.
+7. Keep a written report of all substantive changes, sources checked, and verification commands.
+8. Do not delete entries solely because they are uncited. Delete only duplicates, malformed commented records that BibTeX still scans, or entries the user explicitly asks you to remove.
 
 ## Initial Scope
 
@@ -205,9 +207,10 @@ Include:
 9. Entry-by-entry changes for all substantive edits.
 10. Table of duplicate-key and database-hygiene changes.
 11. Items checked but left unchanged, with reasons.
-12. Original sources checked, especially for publication status, URLs, title capitalization, and publisher locations.
-13. Verification commands and results.
-14. Remaining warnings or risks.
+12. Active-citation source audit table with columns for citation key, active status, source checked, URL or DOI, fields verified, changes made, and remaining uncertainty.
+13. Original sources checked, especially for publication status, URLs, title capitalization, and publisher locations.
+14. Verification commands and results.
+15. Remaining warnings or risks.
 
 For AI provenance, use explicit values when available, such as `AI model: OpenAI Codex GPT-5.5` and `Reasoning level: Extra High`. If the exact model or reasoning setting is unavailable, write `not reported` rather than guessing.
 
