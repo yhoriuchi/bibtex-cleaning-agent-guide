@@ -52,10 +52,12 @@ howpublished = {\textit{Source}, Month Day, available at \url{https://...}, last
 
 13. Protect acronyms and country names with braces, such as `{U.S.}`, `{US}`, `{UK}`, `{UN}`, `{EU}`, `{IO}`, and `{NATO}`.
 14. Normalize page ranges to `--`, DOI fields to bare DOI values, and remove empty fields.
-15. Add publisher locations for books and chapters unless the style guide explicitly omits them; for example, use `address = {New York, NY}` with `publisher = {Cambridge University Press}` so the rendered reference can show `New York, NY: Cambridge University Press`.
-16. Check whether the target style requires Title Case or sentence case, apply it consistently, and protect acronyms or proper nouns that BibTeX might downcase.
-17. Keep stable publisher links for books and journal articles out of visible web-citation fields unless the style requires them.
-18. Compile and verify the bibliography after editing.
+15. Remove `url` fields from entries that already have standard publication metadata, especially published journal or magazine articles, books, and book chapters, unless the target style explicitly requires a URL.
+16. Keep URLs for unpublished manuscripts, working papers, preprints, newspaper articles, policy sources, government pages, and web sources, usually in `howpublished` for `@misc` entries.
+17. Add publisher locations for books and chapters unless the style guide explicitly omits them; for example, use `address = {New York, NY}` with `publisher = {Cambridge University Press}` so the rendered reference can show `New York, NY: Cambridge University Press`.
+18. Check whether the target style requires Title Case or sentence case, apply it consistently, and protect acronyms or proper nouns that BibTeX might downcase.
+19. Keep stable publisher links for books and journal articles out of visible web-citation fields unless the style requires them.
+20. Compile and verify the bibliography after editing.
 
 ## Deliverables
 
@@ -70,6 +72,7 @@ howpublished = {\textit{Source}, Month Day, available at \url{https://...}, last
    - substantive metadata changes with sources;
    - web and working-paper formatting changes;
    - title/capitalization/style cleanup;
+   - URL-field removals from standard published entries;
    - entry-by-entry changes;
    - active-citation source audit with citation key, active status, source checked, URL or DOI, fields verified, changes made, and remaining uncertainty;
    - original sources checked;

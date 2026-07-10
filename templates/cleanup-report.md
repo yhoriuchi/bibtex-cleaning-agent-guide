@@ -85,6 +85,12 @@ Every active citation must appear here. If no original or strong source could be
 |---|---|
 | `[key]` | `[change]` |
 
+## URL-Field Removals from Standard Published Entries
+
+| BibTeX key | Entry type | URL removed | Reason |
+|---|---|---|---|
+| `[key]` | `[@article/@book/@incollection]` | `[URL]` | `[standard publication metadata already sufficient / target style would render unwanted URL]` |
+
 ## Publisher Location Normalization
 
 | BibTeX key | Change made |

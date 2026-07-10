@@ -44,6 +44,7 @@ If you are starting a new manuscript, consider using my [LaTeX Research Article 
 - Work from active citations in `.aux` files.
 - Check original sources as much as possible before changing entries.
 - Record a checked source for every active citation, or mark it unverified with a reason.
+- Remove URL fields from standard published entries when ordinary publication metadata is enough.
 - Preserve the manuscript's style unless the user changes it.
 - Apply the style guide's Title Case or sentence-case rule consistently.
 - Compile the manuscript and inspect BibTeX warnings.
@@ -140,6 +141,7 @@ A bibliography cleanup is not complete unless every active citation is either ve
 - Normalize page ranges to `--`.
 - Store DOI values without `https://doi.org/`.
 - Remove empty fields such as `number = {}`.
+- Remove `url` fields from entries that already have standard publication metadata, especially published journal or magazine articles, books, and book chapters, unless the target style explicitly requires a URL.
 - For online-first articles without final issue/page metadata, keep `journal = {Journal Name,}` and put `forthcoming`, `FirstView`, or the chosen equivalent in `volume`.
 - Preserve existing BibTeX keys unless resolving duplicate-key conflicts.
 - Keep stable publisher links for books and journal articles out of visible web-citation fields unless the target style requires them.
@@ -177,6 +179,7 @@ The final cleanup report should include:
 - substantive publication-status and metadata changes;
 - web and working-paper formatting changes;
 - title, capitalization, and style cleanup;
+- URL-field removals from standard published entries;
 - entry-by-entry changes;
 - active-citation source audit, with citation key, active status, source checked, URL or DOI, fields verified, changes made, and remaining uncertainty;
 - original sources checked;

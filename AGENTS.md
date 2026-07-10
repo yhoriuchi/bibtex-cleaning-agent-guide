@@ -66,6 +66,8 @@ Use `@article` for published journal articles. Prefer complete fields:
 
 Use `pages = {1--22}` with a double hyphen. Store DOI values without `https://doi.org/`.
 
+Do not include `url` fields for published journal or magazine articles that already have enough standard publication metadata to render a complete reference, such as journal, year, volume, number, pages, and DOI when available. Remove imported publisher or article-page URLs from these entries unless the target style explicitly requires them.
+
 For online-first articles that are published online but do not yet have assigned volume, issue, or page numbers, default to a journal-name comma plus `volume = {forthcoming}` pattern. The comma inside the `journal` field is intentional for local `.bst` styles that would otherwise print an awkward space or punctuation mark before the status label. Do not remove it as a typo.
 
 ```text
@@ -119,6 +121,8 @@ Remove source names from titles when they were imported by Zotero or a browser e
 
 Use `@book` for authored or edited books. Include publisher location by default unless the manuscript's style guide explicitly omits publisher locations.
 
+Do not include `url` fields for books with standard book metadata, such as author or editor, title, year, publisher, and address. Remove publisher, Google Books, library catalog, or bookseller URLs from book entries unless the target style explicitly requires a URL or the URL is the only reliable way to identify the source.
+
 ```text
 @book{key,
   author    = {...},
@@ -137,6 +141,8 @@ The rendered reference should be able to produce a location-plus-publisher form 
 
 Use `@incollection` for chapters in edited volumes. Include chapter author, title, booktitle, editor, publisher, address, year, and pages unless the style guide explicitly omits publisher locations.
 
+Do not include `url` fields for chapters or edited-volume entries when the chapter and book metadata are sufficient to render a complete reference. Keep URLs for genuinely online-only, unpublished, policy, web, or preprint sources instead of forcing those records into book or article types.
+
 ## Title and Capitalization Rules
 
 1. Check whether the target style requires Title Case, sentence case, or another title-capitalization convention, then apply that convention consistently.
@@ -152,13 +158,14 @@ Use `@incollection` for chapters in edited volumes. Include chapter author, titl
 1. Remove empty fields such as `number = {}`.
 2. Normalize page ranges to `--`.
 3. Normalize DOI fields to the bare DOI.
-4. Keep stable publisher links for books and journal articles out of visible web-citation fields unless the target style requires them.
-5. For online-first articles without final issue/page metadata, keep the intentional comma in `journal = {Journal Name,}` and put the status label in `volume`.
-6. For unpublished manuscripts, working papers, preprints, newspaper articles, policy sources, government pages, and web sources, use `@misc` with a public URL in `howpublished` whenever a URL exists.
-7. Use `url` or `howpublished` consistently with the `.bst` behavior.
-8. Avoid duplicate metadata in both `url` and `howpublished` unless the style requires it.
-9. Preserve existing BibTeX keys unless there is a duplicate-key conflict.
-10. Do not invent missing authors, dates, journals, page ranges, or issue numbers.
+4. Remove `url` fields from bibliographic entries that already have standard publication metadata, especially published journal articles, magazine articles, books, and book chapters, unless the target style explicitly requires a URL.
+5. Keep stable publisher links for books and journal articles out of visible web-citation fields unless the target style requires them.
+6. Keep URLs for unpublished manuscripts, working papers, preprints, newspaper articles, policy sources, government pages, and web sources, usually in `howpublished` for `@misc` entries when a public URL exists.
+7. For online-first articles without final issue/page metadata, keep the intentional comma in `journal = {Journal Name,}` and put the status label in `volume`.
+8. Use `url` or `howpublished` consistently with the `.bst` behavior.
+9. Avoid duplicate metadata in both `url` and `howpublished` unless the style requires it.
+10. Preserve existing BibTeX keys unless there is a duplicate-key conflict.
+11. Do not invent missing authors, dates, journals, page ranges, or issue numbers.
 
 ## Duplicate and Syntax Audit
 
@@ -204,13 +211,14 @@ Include:
 6. Table of web and working-paper formatting changes.
 7. Table of title, capitalization, and style cleanup.
 8. Table of publisher-location changes, if relevant.
-9. Entry-by-entry changes for all substantive edits.
-10. Table of duplicate-key and database-hygiene changes.
-11. Items checked but left unchanged, with reasons.
-12. Active-citation source audit table with columns for citation key, active status, source checked, URL or DOI, fields verified, changes made, and remaining uncertainty.
-13. Original sources checked, especially for publication status, URLs, title capitalization, and publisher locations.
-14. Verification commands and results.
-15. Remaining warnings or risks.
+9. Table of URL-field removals from standard published entries, if relevant.
+10. Entry-by-entry changes for all substantive edits.
+11. Table of duplicate-key and database-hygiene changes.
+12. Items checked but left unchanged, with reasons.
+13. Active-citation source audit table with columns for citation key, active status, source checked, URL or DOI, fields verified, changes made, and remaining uncertainty.
+14. Original sources checked, especially for publication status, URLs, title capitalization, and publisher locations.
+15. Verification commands and results.
+16. Remaining warnings or risks.
 
 For AI provenance, use explicit values when available, such as `AI model: OpenAI Codex GPT-5.5` and `Reasoning level: Extra High`. If the exact model or reasoning setting is unavailable, write `not reported` rather than guessing.
 
