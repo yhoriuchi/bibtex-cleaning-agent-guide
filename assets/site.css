@@ -30,6 +30,10 @@ a {
   font-weight: 650;
 }
 
+.container-lg.markdown-body {
+  margin-top: 0 !important;
+}
+
 .page-shell {
   width: min(948px, calc(100% - 32px));
   margin: 0 auto;
@@ -37,7 +41,7 @@ a {
 }
 
 .hero {
-  padding: 42px 0 30px;
+  padding: 24px 0 30px;
   border-bottom: 1px solid var(--line);
 }
 
